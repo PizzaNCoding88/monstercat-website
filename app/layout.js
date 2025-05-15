@@ -11,9 +11,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const kanit = Geist_Mono({
+const kanit = Kanit({
   variable: "--font-kanit",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
