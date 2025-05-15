@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 const SidebarMenu = () => {
   return (
     <div>
-      <ul className="uppercase flex flex-col gap-4 font-bold text-xl pl-8 pt-8 font-kanit">
+      <ul className="uppercase flex flex-col gap-4 font-bold text-xl pl-8 pt-1 font-kanit tracking-wide">
         <div className="flex items-center gap-4">
           <li>Music</li>
           <ChevronRight size={15} />

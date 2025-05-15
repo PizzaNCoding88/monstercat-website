@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "../../public/images/monstercat-logo.webp";
 import Link from "next/link";
 import { AlignRight } from "lucide-react";
-import MobileSideBar from "../components/MobileSideBar";
+import MobileSideBar from "../components/Sidebar/MobileSideBar";
 
 export default function Frontpage() {
   const [isOpen, setIsOpen] = useState();
