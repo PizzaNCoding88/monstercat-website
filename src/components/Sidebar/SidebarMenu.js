@@ -16,7 +16,7 @@ const SidebarMenu = () => {
             onClick={openCloseMusicMenu}
           >
             <li>Music</li>
-            {musicMenu ? <ChevronUp /> : <ChevronRight />}
+            {musicMenu ? <ChevronUp size={15} /> : <ChevronRight size={15} />}
           </div>
           {musicMenu && (
             <ul className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal">
