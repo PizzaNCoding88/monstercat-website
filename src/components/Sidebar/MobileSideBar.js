@@ -3,6 +3,7 @@ import { CircleX } from "lucide-react";
 import Image from "next/image";
 import WhiteLogo from "../../../public/images/monstercat-logo-white.svg";
 import SidebarMenu from "./SidebarMenu";
+import SidebarBottom from "./SidebarBottom";
 
 const MobileSideBar = (props) => {
   const { status } = props;
@@ -13,6 +14,7 @@ const MobileSideBar = (props) => {
         <CircleX size={28} onClick={status} />
       </div>
       <SidebarMenu />
+      <SidebarBottom />
     </div>
   );
 };
