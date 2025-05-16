@@ -6,6 +6,9 @@ import Link from "next/link";
 import { AlignRight } from "lucide-react";
 import MobileSideBar from "../components/Sidebar/MobileSideBar";
 
+import * as motion from "motion/react-client";
+import { AnimatePresence } from "motion/react";
+
 export default function Frontpage() {
   const [isOpen, setIsOpen] = useState();
   function changeOpen() {
@@ -21,7 +24,18 @@ export default function Frontpage() {
           </div>
         </Link>
       </nav>
-      {isOpen && <MobileSideBar status={changeOpen} />}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ x: 250, y: -70 }}
+            animate={{ x: 0 }}
+            exit={{ x: 250 }}
+            transition={{ duration: 0.3, ease: "easeIn" }}
+          >
+            <MobileSideBar status={changeOpen} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
