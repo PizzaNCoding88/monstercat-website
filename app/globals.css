@@ -16,6 +16,29 @@
   --font-kanit: var(--font-kanit);
 }
 
+@layer utilities {
+  .bg-landing {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    /* z-index: -10; */
+  }
+  .bg-landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../public/images/album.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -10;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
