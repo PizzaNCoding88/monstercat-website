@@ -14,6 +14,7 @@ export default function Frontpage() {
   function changeOpen() {
     setIsOpen(!isOpen);
   }
+
   return (
     <header>
       <nav className="h-16 bg-[rgb(24,24,21)] px-8 py-2 flex flex-row items-center justify-between">

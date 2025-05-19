@@ -2,6 +2,9 @@ import React from "react";
 import { ChevronRight, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
+import * as motion from "motion/react-client";
+import { AnimatePresence } from "motion/react";
+
 const SidebarMenu = () => {
   const [musicMenu, setMusicMenu] = useState();
   const [aboutMenu, setAboutMenu] = useState();
@@ -30,13 +33,20 @@ const SidebarMenu = () => {
             <li>Music</li>
             {musicMenu ? <ChevronUp size={15} /> : <ChevronRight size={15} />}
           </div>
+
           {musicMenu && (
-            <ul className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal">
+            <motion.ul
+              className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opcaity: 0 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+            >
               <li>our music</li>
               <li>Instinct</li>
               <li>Uncaged</li>
               <li>Silk</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
         <li>Artists</li>
@@ -49,14 +59,20 @@ const SidebarMenu = () => {
             {aboutMenu ? <ChevronUp size={15} /> : <ChevronRight size={15} />}
           </div>
           {aboutMenu && (
-            <ul className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal">
+            <motion.ul
+              className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opcaity: 0 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+            >
               <li>About Monstercat</li>
               <li>Diversity & Inlcusion</li>
               <li>Code of Ethos</li>
               <li>Environmental</li>
               <li>Contact us</li>
               <li>Careers</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
         <li>News</li>
@@ -69,10 +85,16 @@ const SidebarMenu = () => {
             {eventsMenu ? <ChevronUp size={15} /> : <ChevronRight size={15} />}
           </div>
           {eventsMenu && (
-            <ul className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal">
+            <motion.ul
+              className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opcaity: 0 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+            >
               <li>Monstercat Events Experience</li>
               <li>Upcoming events</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
         <div className="flex flex-col">
@@ -88,12 +110,18 @@ const SidebarMenu = () => {
             )}
           </div>
           {programmingMenu && (
-            <ul className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal">
+            <motion.ul
+              className="pl-6 pt-1 font-light flex flex-col gap-1 text-lg tracking-normal"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opcaity: 0 }}
+              transition={{ duration: 0.2, ease: "easeIn" }}
+            >
               <li className="capitalize">MonstercatTV</li>
               <li>Call of the wild</li>
               <li>Silk showcase</li>
               <li>Upcoming Shows</li>
-            </ul>
+            </motion.ul>
           )}
         </div>
         <li>Gold</li>
