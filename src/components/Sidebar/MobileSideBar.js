@@ -8,7 +8,7 @@ import SidebarBottom from "./SidebarBottom";
 const MobileSideBar = (props) => {
   const { status } = props;
   return (
-    <div className="absolute w-screen h-[100vh] bg-black z-10 top-0">
+    <div className="absolute w-screen h-[100vh] bg-black z-100 top-0">
       <div className="flex items-center justify-between py-8 px-8">
         <Image alt="white logo" src={WhiteLogo} width={200} />
         <CircleX size={28} onClick={status} />

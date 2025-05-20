@@ -6,11 +6,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand: #50a584;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-kanit: var(--font-kanit);
@@ -20,10 +22,10 @@
   .bg-landing {
     position: relative;
     overflow: hidden;
-    height: 300px;
     width: 100%;
-    /* z-index: -10; */
+    z-index: -10;
   }
+
   .bg-landing::before {
     content: "";
     position: absolute;
@@ -31,10 +33,15 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../public/images/album.webp");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../public/images/album.webp");
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
+    filter: blur(4px);
     z-index: -10;
   }
 }
