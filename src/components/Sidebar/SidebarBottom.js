@@ -22,7 +22,7 @@ const SidebarBottom = () => {
         <SiDiscord />
         <SiPlayerfm />
       </div>
-      <div className="flex items-center gap-8 font-days tracking-wide font-bold">
+      <div className="flex items-center gap-8 font-main tracking-wide font-bold">
         <button className="uppercase border-2 border-white px-2 py-1">
           Sign In
         </button>

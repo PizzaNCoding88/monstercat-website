@@ -24,7 +24,7 @@ const SidebarMenu = () => {
   }
   return (
     <div className="h-8/12 overflow-y-auto">
-      <ul className="uppercase flex flex-col gap-4 font-bold pl-8 pt-1 font-days tracking-wide">
+      <ul className="uppercase flex flex-col gap-4 font-bold pl-8 pt-1 font-main tracking-wide">
         <div className="flex flex-col">
           <div
             className="flex items-center gap-4 cursor-pointer"

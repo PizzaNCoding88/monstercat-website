@@ -16,12 +16,12 @@ const MainSection = () => {
   return (
     <div className="pt-10 bg-landing flex-col h-full">
       <Image alt="album logo" src={AlbumLogo} className="w-[85%] mx-auto" />
-      <div className="flex gap-1 font-days font-light py-8 pl-5">
+      <div className="flex gap-1 font-main font-light py-8 pl-5">
         <span className="text-brand">Instinct</span>
         <p> --- </p>
         <p className="text-red">Released May 22,2020</p>
       </div>
-      <div className="font-days text-xl uppercase pl-5 font-bold">
+      <div className="font-main text-xl uppercase pl-5 font-bold">
         <p className="mb-3">Level Days</p>
         <p>Conro</p>
       </div>
@@ -30,7 +30,7 @@ const MainSection = () => {
         <Buttons text={"Share"} icon={LucideShare2} />
       </div>
       <div className="pt-[25%]">
-        <div className="font-days text-xl uppercase pl-5 font-bold">
+        <div className="font-main text-xl uppercase pl-5 font-bold">
           Stream it your way
         </div>
         <div className="flex">

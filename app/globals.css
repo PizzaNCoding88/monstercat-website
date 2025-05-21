@@ -16,7 +16,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-kanit: var(--font-kanit);
-  --font-days: var(--font-days-one);
+  /* --font-days: var(--font-days-one); */
+  --font-main: var(--font-days-one);
 }
 
 @layer utilities {
