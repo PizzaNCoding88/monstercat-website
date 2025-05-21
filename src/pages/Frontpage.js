@@ -17,7 +17,7 @@ export default function Frontpage() {
   }
 
   return (
-    <div>
+    <div className="h-screen">
       <header>
         <nav className="h-16 bg-[rgb(24,24,21)] px-8 py-2 flex flex-row items-center justify-between">
           <Image alt="web logo" src={Logo} width={35} height={35} />

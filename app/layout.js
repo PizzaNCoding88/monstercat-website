@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Kanit } from "next/font/google";
+import { Geist, Geist_Mono, Kanit, Days_One } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +17,12 @@ const kanit = Kanit({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
+const daysOne = Days_One({
+  variable: "--font-days-one",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata = {
   title: "Monstercat - copy",
   description: "Frontend Practice",
@@ -26,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} ${daysOne.variable} antialiased`}
       >
         {children}
       </body>
