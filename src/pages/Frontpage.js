@@ -11,6 +11,7 @@ import { AnimatePresence } from "motion/react";
 import MainSection from "../components/MainSection";
 import Tracklist from "../components/Tracklist";
 import MusicVideoSection from "../components/MusicVideoSection";
+import Footer from "../components/Footer";
 
 export default function Frontpage() {
   const [isOpen, setIsOpen] = useState();
@@ -45,6 +46,7 @@ export default function Frontpage() {
       <MainSection />
       <Tracklist />
       <MusicVideoSection />
+      <Footer />
     </div>
   );
 }

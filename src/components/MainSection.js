@@ -16,7 +16,7 @@ const MainSection = () => {
   return (
     <div className="pt-10 bg-landing flex-col h-full">
       <Image alt="album logo" src={AlbumLogo} className="w-[85%] mx-auto" />
-      <div className="flex gap-1 font-main font-light py-8 pl-5">
+      <div className="flex gap-1 font-main font-light py-8 pl-5 italic text-sm">
         <span className="text-brand">Instinct</span>
         <p> --- </p>
         <p className="text-red">Released May 22,2020</p>
