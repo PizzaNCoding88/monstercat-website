@@ -3,7 +3,7 @@ import Song from "./songs/Song";
 
 const Tracklist = () => {
   return (
-    <div className="px-5 pb-50">
+    <div className="px-5 py-10">
       <h1 className="font-main text-xl uppercase font-bold pb-5">Tracklist</h1>
       <div className="flex flex-col gap-8">
         <Song

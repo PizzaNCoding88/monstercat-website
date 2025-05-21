@@ -29,7 +29,7 @@ const MainSection = () => {
         <Buttons text={"Listen Now"} icon={LucidePlay} style="primary" />
         <Buttons text={"Share"} icon={LucideShare2} />
       </div>
-      <div className="pt-[25%] pl-5">
+      <div className="pt-10 pl-5">
         <div className="font-main text-xl uppercase font-bold pb-6">
           Stream it your way
         </div>
