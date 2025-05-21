@@ -10,6 +10,7 @@ import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
 import MainSection from "../components/MainSection";
 import Tracklist from "../components/Tracklist";
+import MusicVideoSection from "../components/MusicVideoSection";
 
 export default function Frontpage() {
   const [isOpen, setIsOpen] = useState();
@@ -43,6 +44,7 @@ export default function Frontpage() {
       </header>
       <MainSection />
       <Tracklist />
+      <MusicVideoSection />
     </div>
   );
 }
