@@ -13,6 +13,7 @@ const MusicVideoSection = () => {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
+      <hr className="mt-32"></hr>
     </div>
   );
 };
