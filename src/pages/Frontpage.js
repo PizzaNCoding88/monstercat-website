@@ -9,6 +9,7 @@ import MobileSideBar from "../components/Sidebar/MobileSideBar";
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
 import MainSection from "../components/MainSection";
+import Tracklist from "../components/Tracklist";
 
 export default function Frontpage() {
   const [isOpen, setIsOpen] = useState();
@@ -41,6 +42,7 @@ export default function Frontpage() {
         </AnimatePresence>
       </header>
       <MainSection />
+      <Tracklist />
     </div>
   );
 }

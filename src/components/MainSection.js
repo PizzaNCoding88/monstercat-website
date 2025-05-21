@@ -29,8 +29,8 @@ const MainSection = () => {
         <Buttons text={"Listen Now"} icon={LucidePlay} style="primary" />
         <Buttons text={"Share"} icon={LucideShare2} />
       </div>
-      <div className="pt-[25%]">
-        <div className="font-main text-xl uppercase pl-5 font-bold">
+      <div className="pt-[25%] pl-5">
+        <div className="font-main text-xl uppercase font-bold pb-6">
           Stream it your way
         </div>
         <div className="flex">
