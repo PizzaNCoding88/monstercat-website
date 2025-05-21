@@ -1,17 +1,12 @@
 import React from "react";
+import FooterLink from "./footer/FooterLink";
+import NewsLetter from "./footer/NewsLetter";
 
 const Footer = () => {
   return (
-    <div className="px-5">
-      <ul className="font-main text-sm font-bold uppercase flex flex-col gap-2 tracking-wider">
-        <li>About monstercat</li>
-        <li>Contact Us</li>
-        <li>Careers</li>
-        <li>News</li>
-        <li>Press</li>
-        <li>Terms of Service</li>
-        <li>Privacy policy</li>
-      </ul>
+    <div className="px-5 flex flex-col gap-10">
+      <FooterLink />
+      <NewsLetter />
     </div>
   );
 };
