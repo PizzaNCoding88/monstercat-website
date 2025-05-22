@@ -8,10 +8,9 @@ const MusicVideoSection = () => {
         className="w-full aspect-video"
         src="https://www.youtube.com/embed/7nObtWENgxA?si=UsZnH5ERyEq4naIG"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
       <hr className="mt-32"></hr>
     </div>
