@@ -8,7 +8,7 @@ const NewsLetter = () => {
         Monstercat News
       </h3>
       <p className="font-main text-sm tracking-widest">
-        Don't miss a thing, stay up to date with the latest news from us.
+        Don`&apos;`t miss a thing, stay up to date with the latest news from us.
       </p>
       <div className="flex justify-between">
         <input
